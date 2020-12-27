@@ -1,0 +1,19 @@
+<meta charset='utf-8'>
+<script>
+
+
+	var tg = prompt('Введите сумму в тенге:');
+	var usd = 427.94;
+	var eu = 507.22;
+	var ru = 5.60;
+	
+	var conUSD = tg/usd;
+	var conEU = tg/eu;
+	var conRU = tg/ru;
+	alert(
+			tg + 'тенге =' + conUSD.toFixed(2) + ' долларов.\n'+
+			tg + 'тенге =' + conEU.toFixed(2) + ' евро.\n'+
+			tg + 'тенге =' + conRU.toFixed(2) + ' рублей.'
+
+);
+</script>

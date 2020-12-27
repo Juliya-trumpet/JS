@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+
+	var summ = +prompt('Введите сумму вклада: ');
+	var percent = +prompt('Введите процент для начисления: ');
+
+	percent = percent/100;
+
+	var result = 'Изменение размера вклада по годам:\n' 
+
+	for(var i = 1; i <=5; i++){
+		summ = summ + (summ * percent);
+		result += i + ' год: ' + summ.toFixed(2) + ' тенге\n';
+	}
+
+	alert(result);
+
+
+</script>
